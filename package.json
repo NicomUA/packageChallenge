@@ -1,0 +1,54 @@
+{
+  "name": "com.mobiquity.packer",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "prebuild": "rimraf lib",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "lint": "npx eslint"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "author": "Nikita Matsapura <macaniki@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "n-readlines": "^1.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/n-readlines": "^1.0.2",
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^27.2.1",
+    "prettier": "^2.1.2",
+    "ts-jest": "^27.0.5",
+    "ts-loader": "^8.0.8",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.4.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "coverageDirectory": "../coverage/",
+    "testEnvironment": "node",
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    }
+  }
+}
