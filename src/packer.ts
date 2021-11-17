@@ -105,7 +105,7 @@ export class Packer {
         // skip same item
         if (n.index == nn.index) continue;
 
-        // is current combination exceed package limit
+        // is current combination will exceed package limit
         if (tWeight + nn.weight > totalWeight) continue;
 
         tWeight += nn.weight;
